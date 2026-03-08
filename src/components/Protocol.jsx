@@ -27,36 +27,59 @@ export default function Protocol() {
 
     useEffect(() => {
         let ctx = gsap.context(() => {
-            const cards = gsap.utils.toArray('.protocol-card');
+            let mm = gsap.matchMedia();
 
-            cards.forEach((card, i) => {
-                if (i < cards.length - 1) {
-                    ScrollTrigger.create({
-                        trigger: card,
-                        start: 'top top',
-                        endTrigger: cards[i + 1],
-                        end: 'top top',
-                        pin: true,
-                        pinSpacing: false,
-                        animation: gsap.to(card, {
-                            scale: 0.9,
-                            opacity: 0.5,
-                            filter: 'blur(10px)',
-                            duration: 1,
-                            ease: 'none'
-                        }),
-                        scrub: true,
-                    });
-                } else {
-                    ScrollTrigger.create({
-                        trigger: card,
-                        start: 'top top',
-                        end: '+=50%',
-                        pin: true,
-                        pinSpacing: true,
-                    });
-                }
+            // Desktop animation (pinned sliding)
+            mm.add("(min-width: 768px)", () => {
+                const cards = gsap.utils.toArray('.protocol-card');
+
+                cards.forEach((card, i) => {
+                    if (i < cards.length - 1) {
+                        ScrollTrigger.create({
+                            trigger: card,
+                            start: 'top top',
+                            endTrigger: cards[i + 1],
+                            end: 'top top',
+                            pin: true,
+                            pinSpacing: false,
+                            animation: gsap.to(card, {
+                                scale: 0.9,
+                                opacity: 0.5,
+                                filter: 'blur(10px)',
+                                duration: 1,
+                                ease: 'none'
+                            }),
+                            scrub: true,
+                        });
+                    } else {
+                        ScrollTrigger.create({
+                            trigger: card,
+                            start: 'top top',
+                            end: '+=50%',
+                            pin: true,
+                            pinSpacing: true,
+                        });
+                    }
+                });
             });
+
+            // Mobile animation (simple fade up)
+            mm.add("(max-width: 767px)", () => {
+                const cards = gsap.utils.toArray('.protocol-card');
+                cards.forEach((card) => {
+                    gsap.from(card, {
+                        scrollTrigger: {
+                            trigger: card,
+                            start: 'top 85%',
+                        },
+                        y: 40,
+                        opacity: 0,
+                        duration: 0.8,
+                        ease: 'power3.out'
+                    });
+                });
+            });
+
         }, containerRef);
 
         return () => ctx.revert();
@@ -71,7 +94,7 @@ export default function Protocol() {
                     {steps.map((step, i) => (
                         <div
                             key={i}
-                            className={`protocol-card relative w-full h-[80vh] border border-white/10 rounded-[3rem] p-12 md:p-24 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12`}
+                            className={`protocol-card relative w-full h-auto min-h-[60vh] md:h-[80vh] border border-white/10 rounded-[2rem] md:rounded-[3rem] p-8 md:p-24 py-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12 mt-8 md:mt-0`}
                             style={{
                                 backgroundColor: i === 0 ? '#0A0A0A' : i === 1 ? '#111111' : '#1A1A1A',
                                 zIndex: i,
