@@ -10,7 +10,6 @@ export default function Navbar() {
                     Samir Does AI
                 </div>
                 <div className="hidden md:flex items-center gap-8 font-heading text-sm font-medium tracking-tight">
-                    <a href="#features" className="hover:text-accent transition-colors hover:-translate-y-[1px]">Why us?</a>
                     <a href="#protocol" className="hover:text-accent transition-colors hover:-translate-y-[1px]">Our Process</a>
                     <a href="#scale" className="hover:text-accent transition-colors hover:-translate-y-[1px]">Contact</a>
                 </div>
@@ -32,7 +31,6 @@ export default function Navbar() {
 
             {/* Mobile Menu Content */}
             <div className={`md:hidden flex flex-col items-center gap-6 font-heading text-sm font-medium tracking-tight overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-64 mt-6 pb-4 opacity-100' : 'max-h-0 opacity-0'}`}>
-                <a href="#features" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">Why us?</a>
                 <a href="#protocol" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">Our Process</a>
                 <a href="#scale" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">Contact</a>
                 <a href="https://tidycal.com/msamir5230/30-minute-meeting" target="_blank" rel="noreferrer" className="bg-accent text-white px-8 py-3 rounded-full font-heading font-bold text-sm tracking-tight w-full text-center mt-2" onClick={() => setIsOpen(false)}>

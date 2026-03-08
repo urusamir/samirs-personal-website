@@ -22,9 +22,8 @@ export default function Footer() {
 
                 <div className="md:col-span-3 flex flex-col gap-4 mt-2">
                     <h4 className="font-heading text-[15px] font-medium text-white mb-2 shadow-sm">Links</h4>
-                    <a href="#features" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Home</a>
-                    <a href="#protocol" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Why us?</a>
-                    <a href="#scale" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Our Process</a>
+                    <a href="#top" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Home</a>
+                    <a href="#protocol" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Our Process</a>
                     <a href="https://tidycal.com/msamir5230/30-minute-meeting" target="_blank" rel="noreferrer" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Book a Call</a>
                 </div>
 
