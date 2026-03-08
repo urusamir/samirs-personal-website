@@ -19,8 +19,8 @@ export default function ToolSlider() {
                 Built with your favorite tech
             </p>
 
-            {/* Container for marquee */}
-            <div className="relative flex overflow-x-hidden group w-full max-w-[100vw] py-4">
+            {/* Desktop Marquee (Hidden on mobile) */}
+            <div className="relative hidden md:flex overflow-x-hidden group w-full max-w-[100vw] py-4">
                 {/* Left fade */}
                 <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
                 {/* Right fade */}
@@ -39,10 +39,45 @@ export default function ToolSlider() {
                 </div>
             </div>
 
+            {/* Mobile Double-Row Marquee (Hidden on desktop) */}
+            <div className="relative flex flex-col gap-6 md:hidden overflow-x-hidden w-full max-w-[100vw] py-2">
+                {/* Fixed fades for mobile */}
+                <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
+                <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div>
+
+                {/* Top Row - Fast */}
+                <div className="animate-[marqueeMobile_15s_linear_infinite] flex items-center space-x-8 whitespace-nowrap min-w-full">
+                    {tools.slice(0, 5).concat(tools.slice(0, 5)).concat(tools.slice(0, 5)).map((tool, idx) => (
+                        <div key={`top-${idx}`} className="flex-shrink-0 flex items-center gap-2 opacity-80">
+                            <img src={tool.url} alt={tool.name} className="w-6 h-6 rounded-md object-contain" />
+                            <span className="font-heading font-bold text-base tracking-tight text-white">{tool.name}</span>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Bottom Row - Fast Reverse */}
+                <div className="animate-[marqueeMobileReverse_18s_linear_infinite] flex items-center space-x-8 whitespace-nowrap min-w-full">
+                    {tools.slice(5).concat(tools.slice(5)).concat(tools.slice(5)).map((tool, idx) => (
+                        <div key={`bottom-${idx}`} className="flex-shrink-0 flex items-center gap-2 opacity-80">
+                            <img src={tool.url} alt={tool.name} className="w-6 h-6 rounded-md object-contain" />
+                            <span className="font-heading font-bold text-base tracking-tight text-white">{tool.name}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
             <style>{`
         @keyframes marquee {
           0% { transform: translateX(0%); }
           100% { transform: translateX(-50%); }
+        }
+        @keyframes marqueeMobile {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-33.33%); }
+        }
+        @keyframes marqueeMobileReverse {
+          0% { transform: translateX(-33.33%); }
+          100% { transform: translateX(0%); }
         }
       `}</style>
         </div>

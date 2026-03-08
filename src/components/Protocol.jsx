@@ -94,7 +94,7 @@ export default function Protocol() {
                     {steps.map((step, i) => (
                         <div
                             key={i}
-                            className={`protocol-card relative w-full h-auto min-h-[60vh] md:h-[80vh] border border-white/10 rounded-[2rem] md:rounded-[3rem] p-8 md:p-24 py-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12 mt-8 md:mt-0`}
+                            className={`protocol-card relative w-full h-auto md:h-[80vh] border border-white/10 rounded-[2rem] md:rounded-[3rem] p-6 md:p-24 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 mt-8 md:mt-0`}
                             style={{
                                 backgroundColor: i === 0 ? '#0A0A0A' : i === 1 ? '#111111' : '#1A1A1A',
                                 zIndex: i,
@@ -130,25 +130,25 @@ export default function Protocol() {
                                 )}
                                 {i === 1 && (
                                     <div className="relative w-full h-full flex items-center justify-center p-6">
-                                        <div className="w-full h-full flex flex-col justify-between items-center relative">
+                                        <div className="w-full h-full flex flex-col justify-between items-center relative py-4 md:py-0">
                                             {/* Scattered Inputs */}
-                                            <div className="flex justify-between w-full px-8 mt-4 z-10">
-                                                <div className="w-12 h-12 rounded-xl bg-[#2A2A2A] border border-white/10 flex items-center justify-center shadow-lg transform -rotate-12">
-                                                    <svg className="w-5 h-5 text-white/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                            <div className="flex justify-between w-full px-4 md:px-8 mt-2 md:mt-4 z-10">
+                                                <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#2A2A2A] border border-white/10 flex items-center justify-center shadow-lg transform -rotate-12">
+                                                    <svg className="w-4 h-4 md:w-5 md:h-5 text-white/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                                                 </div>
-                                                <div className="w-12 h-12 rounded-xl bg-[#2A2A2A] border border-white/10 flex items-center justify-center shadow-lg transform rotate-6 animate-pulse">
-                                                    <svg className="w-5 h-5 text-white/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
+                                                <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#2A2A2A] border border-white/10 flex items-center justify-center shadow-lg transform rotate-6 animate-pulse">
+                                                    <svg className="w-4 h-4 md:w-5 md:h-5 text-white/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
                                                 </div>
-                                                <div className="w-12 h-12 rounded-xl bg-[#2A2A2A] border border-white/10 flex items-center justify-center shadow-lg transform rotate-12">
-                                                    <svg className="w-5 h-5 text-white/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                                <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#2A2A2A] border border-white/10 flex items-center justify-center shadow-lg transform rotate-12">
+                                                    <svg className="w-4 h-4 md:w-5 md:h-5 text-white/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                                 </div>
                                             </div>
 
                                             {/* AI Funnel Processor */}
-                                            <div className="z-10 w-28 h-28 bg-[#152040] rounded-3xl border-2 border-accent flex items-center justify-center shadow-[0_0_40px_rgba(37,99,235,0.4)] relative mt-4">
-                                                <div className="absolute inset-0 bg-accent/20 animate-ping rounded-3xl opacity-50"></div>
+                                            <div className="z-10 w-24 h-24 md:w-28 md:h-28 bg-[#152040] rounded-3xl border-2 border-accent flex items-center justify-center shadow-[0_0_40px_rgba(37,99,235,0.4)] relative mt-2 md:mt-4">
+                                                <div className="absolute inset-0 bg-accent/20 animate-ping rounded-3xl opacity-50 flex"></div>
                                                 <div className="text-center">
-                                                    <div className="font-heading font-black text-white text-3xl">AI</div>
+                                                    <div className="font-heading font-black text-white text-2xl md:text-3xl">AI</div>
                                                     <div className="text-[8px] font-data text-accent uppercase tracking-widest mt-1">Engine</div>
                                                 </div>
                                             </div>
@@ -156,12 +156,12 @@ export default function Protocol() {
                                             {/* Connection Lines rendered as SVG */}
                                             <svg className="absolute inset-0 w-full h-full z-0 pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
                                                 {/* Top Lines into AI */}
-                                                <path d="M 18 18 L 50 42" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="0.5" strokeDasharray="2 2" className="animate-[slide-down_2s_linear_infinite]" />
-                                                <path d="M 50 18 L 50 42" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="0.5" strokeDasharray="2 2" className="animate-[slide-down_2s_linear_infinite_0.5s]" />
-                                                <path d="M 82 18 L 50 42" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="0.5" strokeDasharray="2 2" className="animate-[slide-down_2s_linear_infinite_1s]" />
+                                                <path d="M 18 25 L 50 45" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="0.5" strokeDasharray="2 2" className="animate-[slide-down_2s_linear_infinite]" />
+                                                <path d="M 50 25 L 50 45" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="0.5" strokeDasharray="2 2" className="animate-[slide-down_2s_linear_infinite_0.5s]" />
+                                                <path d="M 82 25 L 50 45" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="0.5" strokeDasharray="2 2" className="animate-[slide-down_2s_linear_infinite_1s]" />
 
                                                 {/* Bottom Line out from AI */}
-                                                <path d="M 50 63 L 50 85" fill="none" stroke="rgba(34,197,94,0.4)" strokeWidth="0.5" strokeDasharray="3 3" className="animate-[slide-down_2s_linear_infinite]" />
+                                                <path d="M 50 65 L 50 82" fill="none" stroke="rgba(34,197,94,0.4)" strokeWidth="0.5" strokeDasharray="3 3" className="animate-[slide-down_2s_linear_infinite]" />
                                             </svg>
 
                                             {/* Organized Green Output */}

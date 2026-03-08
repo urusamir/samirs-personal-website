@@ -73,14 +73,14 @@ export default function Hero() {
                         <span className="text-blue-400">Scalable AI Automation Systems For</span>
                     </h3>
 
-                    <div className="flex flex-wrap items-center justify-center gap-4">
-                        <div className="px-6 md:px-8 py-2 md:py-3 rounded-full border border-blue-400/30 bg-white/5 backdrop-blur-md text-white font-heading font-medium tracking-wide shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:bg-white/10 transition-colors">
+                    <div className="flex flex-row flex-wrap items-center justify-center gap-2 md:gap-4">
+                        <div className="px-3 md:px-8 py-1.5 md:py-3 text-xs md:text-base rounded-full border border-blue-400/30 bg-white/5 backdrop-blur-md text-white font-heading font-medium tracking-wide shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:bg-white/10 transition-colors">
                             Marketing
                         </div>
-                        <div className="px-6 md:px-8 py-2 md:py-3 rounded-full border border-blue-400/30 bg-white/5 backdrop-blur-md text-white font-heading font-medium tracking-wide shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:bg-white/10 transition-colors">
+                        <div className="px-3 md:px-8 py-1.5 md:py-3 text-xs md:text-base rounded-full border border-blue-400/30 bg-white/5 backdrop-blur-md text-white font-heading font-medium tracking-wide shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:bg-white/10 transition-colors">
                             Sales
                         </div>
-                        <div className="px-6 md:px-8 py-2 md:py-3 rounded-full border border-blue-400/30 bg-white/5 backdrop-blur-md text-white font-heading font-medium tracking-wide shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:bg-white/10 transition-colors">
+                        <div className="px-3 md:px-8 py-1.5 md:py-3 text-xs md:text-base rounded-full border border-blue-400/30 bg-white/5 backdrop-blur-md text-white font-heading font-medium tracking-wide shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:bg-white/10 transition-colors">
                             Operations
                         </div>
                     </div>
