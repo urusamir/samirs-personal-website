@@ -30,7 +30,7 @@ export default function ToolSlider() {
                     {tools.concat(tools).concat(tools).map((tool, idx) => (
                         <div
                             key={idx}
-                            className="flex-shrink-0 flex items-center gap-3 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+                            className="flex-shrink-0 flex items-center gap-3 opacity-80 hover:opacity-100 transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
                         >
                             <img src={tool.url} alt={tool.name} className="w-8 h-8 rounded-md object-contain" />
                             <span className="font-heading font-bold text-xl tracking-tight text-white">{tool.name}</span>
