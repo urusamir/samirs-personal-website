@@ -9,9 +9,11 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24 relative z-10">
                 <div className="md:col-span-5 flex flex-col gap-6 items-center md:items-start text-center md:text-left">
                     <div className="font-heading font-normal tracking-tight text-3xl">Samir Does AI.</div>
-                    <p className="font-heading text-white/70 text-sm max-w-sm leading-relaxed mt-2">
-                        Scalable, Reliable, and AI-first solutions. I help you scale your marketing and sales operations by 10x using custom AI systems.
-                    </p>
+                    <img
+                        src="/samir-profile.jpg"
+                        alt="Samir Does AI"
+                        className="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover border border-white/10 shadow-lg mt-2"
+                    />
                 </div>
 
                 <div className="md:col-span-7 grid grid-cols-2 gap-8 md:gap-24 w-full px-4 md:px-0">
