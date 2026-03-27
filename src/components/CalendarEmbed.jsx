@@ -18,7 +18,7 @@ export default function CalendarEmbed() {
     }, []);
 
     return (
-        <section className="relative w-full bg-[#000000] py-24 z-10 flex flex-col items-center justify-center border-t border-white/5" id="book">
+        <section className="relative w-full bg-[#000000] py-24 z-10 flex flex-col items-center justify-center border-t border-white/5" id="contact">
             <div className="max-w-4xl mx-auto px-6 w-full text-center mb-12">
                 <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
                     Book a Free 1-2-1 <span className="text-[#2563EB]">Call</span>

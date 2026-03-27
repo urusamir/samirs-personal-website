@@ -8,17 +8,17 @@ const steps = [
     {
         num: "01",
         title: "Discovery & Audit",
-        desc: "I analyze your entire operations to identify biggest bottlenecks and revenue unlocks."
+        desc: "I audit your entire operation to pinpoint exactly which bottlenecks are holding back your revenue."
     },
     {
         num: "02",
         title: "System Architecture",
-        desc: "Custom AI systems are built to replace manual, repetitive workflows."
+        desc: "I architect custom AI systems designed to completely eliminate your manual, repetitive workflows."
     },
     {
         num: "03",
         title: "Deployment & Scale",
-        desc: "Systems go live, scaling your capacity without expanding headcount."
+        desc: "I deploy your autonomous systems, instantly scaling your bandwidth without expanding your payroll."
     }
 ];
 

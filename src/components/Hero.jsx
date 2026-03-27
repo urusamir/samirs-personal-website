@@ -20,6 +20,7 @@ export default function Hero() {
 
     return (
         <section
+            id="home"
             ref={containerRef}
             className="relative min-h-[100svh] lg:min-h-screen w-full flex flex-col justify-center items-center p-8 md:p-16 overflow-hidden text-center"
         >
@@ -68,9 +69,9 @@ export default function Hero() {
 
                 <div className="hero-elem flex flex-col items-center mt-12 mb-8">
                     <h3 className="font-heading text-sm md:text-base tracking-[0.2em] font-bold text-white mb-6 uppercase">
-                        Design and Deploy
+                        I Design & Deploy Custom AI Automation Systems
                         <br />
-                        <span className="text-blue-400">Scalable AI Automation Systems For</span>
+                        <span className="text-blue-400">That Scale Your</span>
                     </h3>
 
                     <div className="flex flex-row flex-wrap items-center justify-center gap-2 md:gap-4">
