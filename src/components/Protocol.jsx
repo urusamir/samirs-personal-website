@@ -96,7 +96,7 @@ export default function Protocol() {
                             key={i}
                             className={`protocol-card relative w-full h-auto md:h-[80vh] border border-white/10 rounded-[2rem] md:rounded-[3rem] p-6 md:p-24 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 mt-8 md:mt-0`}
                             style={{
-                                backgroundColor: i === 0 ? '#0A0A0A' : i === 1 ? '#111111' : '#1A1A1A',
+                                backgroundColor: '#0A0A0A',
                                 zIndex: i,
                             }}
                         >
