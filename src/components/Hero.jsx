@@ -21,7 +21,7 @@ export default function Hero() {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-[100dvh] w-full flex flex-col justify-center items-center p-8 md:p-16 overflow-hidden text-center"
+            className="relative min-h-[100svh] lg:min-h-screen w-full flex flex-col justify-center items-center p-8 md:p-16 overflow-hidden text-center"
         >
             <div className="absolute inset-0 z-0 bg-[#0B0F19] overflow-hidden perspective-[1200px]">
                 {/* Geometrical animated grid & glowing blue orbs */}

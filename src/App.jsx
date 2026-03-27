@@ -9,7 +9,7 @@ import CalendarEmbed from './components/CalendarEmbed';
 
 function App() {
   return (
-    <div className="relative w-full min-h-screen bg-[#000000]">
+    <div className="relative w-full max-w-[100vw] overflow-x-hidden min-h-screen bg-[#000000]">
       <Navbar />
       <Hero />
       <ToolSlider />
