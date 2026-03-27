@@ -24,7 +24,7 @@ export default function CalendarEmbed() {
                     Book a Free 1-2-1 <span className="text-[#2563EB]">Call</span>
                 </h2>
                 <p className="font-heading text-lg text-white/70 max-w-2xl mx-auto mt-4 leading-relaxed">
-                    Book a free discovery call to discuss your business goals and understand how we can help you achieve them. Experience an AI-first transformation.
+                    Book a free discovery call to discuss your business goals and understand how I can help you achieve them. Experience an AI-first transformation.
                 </p>
             </div>
             

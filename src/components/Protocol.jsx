@@ -8,7 +8,7 @@ const steps = [
     {
         num: "01",
         title: "Discovery & Audit",
-        desc: "We analyze your entire operations to identify biggest bottlenecks and revenue unlocks."
+        desc: "I analyze your entire operations to identify biggest bottlenecks and revenue unlocks."
     },
     {
         num: "02",
@@ -88,7 +88,7 @@ export default function Protocol() {
     return (
         <section id="protocol" ref={containerRef} className="relative w-full bg-[#000000] pt-20 pb-20 md:pb-40">
             <div className="max-w-7xl mx-auto px-8 w-full flex flex-col gap-8 md:gap-16">
-                <h2 className="font-heading text-5xl md:text-7xl font-bold text-white tracking-tight mb-8 text-center w-full">Our <br /><span className="text-accent italic font-drama font-normal">Process</span></h2>
+                <h2 className="font-heading text-5xl md:text-7xl font-bold text-white tracking-tight mb-8 text-center w-full">My <br /><span className="text-accent italic font-drama font-normal">Process</span></h2>
 
                 <div className="relative w-full">
                     {steps.map((step, i) => (

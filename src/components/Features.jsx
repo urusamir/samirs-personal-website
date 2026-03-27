@@ -55,7 +55,7 @@ function FeatureAudit() {
                     <span className="text-accent">Biggest Opportunities</span>
                 </h2>
                 <p className="text-white/60 font-heading text-lg leading-relaxed max-w-lg mt-2">
-                    We identify your bottlenecks, uncover high-value opportunities, and quantify exactly how much time and money you're leaving on the table. You get a clear roadmap with project value and ROI projections so you can make informed decisions.
+                    I identify your bottlenecks, uncover high-value opportunities, and quantify exactly how much time and money you're leaving on the table. You get a clear roadmap with project value and ROI projections so you can make informed decisions.
                 </p>
             </div>
         </div>
@@ -74,7 +74,7 @@ function FeatureScale() {
                     <span className="text-[#FF5A0E]">Hiring More People</span>
                 </h2>
                 <p className="text-white/60 font-heading text-lg leading-relaxed max-w-lg mt-2">
-                    From advanced lead generation and social media automation to complex data systems. Imagine doubling your output without doubling your team. Custom AI systems that handle the work of 5-10 employees, running 24/7 with zero mistakes. That's not the future. That's what we build today.
+                    From advanced lead generation and social media automation to complex data systems. Imagine doubling your output without doubling your team. Custom AI systems that handle the work of 5-10 employees, running 24/7 with zero mistakes. That's not the future. That's what I build today.
                 </p>
             </div>
 

@@ -55,7 +55,7 @@ export default function Philosophy() {
                     ref={textRef}
                     className="text-left font-drama italic text-white text-5xl md:text-8xl lg:text-[7rem] leading-[1.1] max-w-4xl tracking-tight"
                 >
-                    {renderWords("We focus on:")}
+                    {renderWords("I focus on:")}
                     {renderWords("transformational")}
                     <br />
                     <span className="text-accent split-word inline-block translate-y-0 opacity-100">AI-first</span>

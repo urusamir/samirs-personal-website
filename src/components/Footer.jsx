@@ -24,7 +24,7 @@ export default function Footer() {
                     <div className="flex flex-col gap-4 mt-2">
                         <h4 className="font-heading text-[15px] font-medium text-white mb-2 shadow-sm">Links</h4>
                         <a href="#top" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Home</a>
-                        <a href="#protocol" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Our Process</a>
+                        <a href="#protocol" className="font-heading text-sm text-white/60 hover:text-white transition-colors">My Process</a>
                         <a href="https://cal.com/samirdoesai/30min" target="_blank" rel="noreferrer" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Book a Call</a>
                     </div>
 
