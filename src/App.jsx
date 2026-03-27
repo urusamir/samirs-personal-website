@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Protocol from './components/Protocol';
-import GetStarted from './components/GetStarted';
 import Footer from './components/Footer';
 import ToolSlider from './components/ToolSlider';
 import Pricing from './components/Pricing';
@@ -16,7 +15,6 @@ function App() {
       <ToolSlider />
       <Protocol />
       <Pricing />
-      <GetStarted />
       <CalendarEmbed />
       <Footer />
     </div>
