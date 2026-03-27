@@ -16,7 +16,7 @@ export default function Footer() {
                     />
                 </div>
 
-                <div className="md:col-span-7 grid grid-cols-2 gap-8 md:gap-24 w-full px-4 md:px-0">
+                <div className="hidden md:col-span-7 md:grid md:grid-cols-2 gap-8 md:gap-24 w-full px-4 md:px-0">
                     <div className="flex flex-col gap-4 mt-2">
                         <h4 className="font-heading text-[15px] font-medium text-white mb-2 shadow-sm">Links</h4>
                         <a href="#home" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Home</a>
