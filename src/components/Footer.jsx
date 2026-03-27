@@ -12,12 +12,6 @@ export default function Footer() {
                     <p className="font-heading text-white/70 text-sm max-w-sm leading-relaxed mt-2">
                         Scalable, Reliable, and AI-first solutions. I help you scale your marketing and sales operations by 10x using custom AI systems.
                     </p>
-
-                    <div className="mt-8 flex flex-col gap-3 items-center md:items-start w-full">
-                        <a href="https://cal.com/samirdoesai/30min" target="_blank" rel="noreferrer" className="bg-accent hover:bg-accent/90 transition-colors text-white font-heading font-bold text-[15px] px-8 py-3 rounded-full w-fit max-w-xs shadow-[0_0_20px_rgba(37,99,235,0.3)]">
-                            Book a free 1-2-1 call
-                        </a>
-                    </div>
                 </div>
 
                 <div className="md:col-span-7 grid grid-cols-2 gap-8 md:gap-24 w-full px-4 md:px-0">
