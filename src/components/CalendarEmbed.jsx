@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 export default function CalendarEmbed() {
+    useEffect(() => {
+        (async function () {
+            const cal = await getCalApi();
+            cal("ui", {
+                "styles": {
+                    "branding": {
+                        "brandColor": "#2563EB"
+                    }
+                },
+                "hideEventTypeDetails": false,
+                "layout": "month_view"
+            });
+        })();
+    }, []);
+
     return (
         <section className="relative w-full bg-[#000000] py-24 z-10 flex flex-col items-center justify-center border-t border-white/5" id="book">
             <div className="max-w-4xl mx-auto px-6 w-full text-center mb-12">
@@ -13,19 +29,12 @@ export default function CalendarEmbed() {
             </div>
             
             <div className="w-full max-w-[1000px] px-4 md:px-8">
-                <div 
-                    className="w-full h-[1000px] sm:h-[850px] md:h-[750px] overflow-hidden rounded-2xl md:rounded-[2rem] border border-white/10 bg-[#111111] shadow-[0_0_50px_rgba(37,99,235,0.05)]"
-                    style={{ WebkitOverflowScrolling: 'touch' }}
-                >
-                    <iframe
-                        src="https://cal.com/samirdoesai/30min?embed=true&theme=dark"
-                        width="100%"
-                        height="100%"
-                        frameBorder="0"
-                        title="Book a call with Samir"
-                        className="w-full h-full"
-                        scrolling="yes"
-                    ></iframe>
+                <div className="w-full rounded-2xl md:rounded-[2rem] border border-white/10 bg-[#111111] shadow-[0_0_50px_rgba(37,99,235,0.05)] overflow-hidden">
+                    <Cal 
+                        calLink="samirdoesai/30min"
+                        style={{width:"100%",height:"100%",overflow:"hidden"}}
+                        config={{layout: 'month_view', theme: 'dark'}}
+                    />
                 </div>
             </div>
         </section>
