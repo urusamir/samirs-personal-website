@@ -13,7 +13,10 @@ export default function CalendarEmbed() {
             </div>
             
             <div className="w-full max-w-[1000px] px-4 md:px-8">
-                <div className="w-full h-[650px] md:h-[750px] overflow-hidden rounded-2xl md:rounded-[2rem] border border-white/10 bg-[#111111] shadow-[0_0_50px_rgba(37,99,235,0.05)]">
+                <div 
+                    className="w-full h-[1000px] sm:h-[850px] md:h-[750px] overflow-hidden rounded-2xl md:rounded-[2rem] border border-white/10 bg-[#111111] shadow-[0_0_50px_rgba(37,99,235,0.05)]"
+                    style={{ WebkitOverflowScrolling: 'touch' }}
+                >
                     <iframe
                         src="https://cal.com/samirdoesai/30min?embed=true&theme=dark"
                         width="100%"
@@ -21,6 +24,7 @@ export default function CalendarEmbed() {
                         frameBorder="0"
                         title="Book a call with Samir"
                         className="w-full h-full"
+                        scrolling="yes"
                     ></iframe>
                 </div>
             </div>
