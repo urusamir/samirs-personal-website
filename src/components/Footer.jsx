@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Linkedin, Mail } from 'lucide-react';
+import MagneticDock from './ui/magnetic-dock';
 export default function Footer() {
     return (
         <footer className="relative bg-black pt-24 pb-12 px-8 text-white flex flex-col items-center border-t border-white/5 z-20 overflow-hidden">
@@ -13,16 +14,12 @@ export default function Footer() {
                 </p>
                 
                 {/* Social Icons */}
-                <div className="flex items-center justify-center gap-6 md:gap-8 mb-12">
-                    <a href="https://www.instagram.com/samirdoes.ai/" target="_blank" rel="noreferrer" className="text-white/60 hover:text-white transition-colors">
-                        <Instagram className="w-6 h-6 md:w-7 md:h-7" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/mohammed-samir-iba/" target="_blank" rel="noreferrer" className="text-white/60 hover:text-white transition-colors">
-                        <Linkedin className="w-6 h-6 md:w-7 md:h-7" />
-                    </a>
-                    <a href="mailto:contact@samirdoesai.com" className="text-white/60 hover:text-white transition-colors">
-                        <Mail className="w-6 h-6 md:w-7 md:h-7" />
-                    </a>
+                <div className="flex items-center justify-center mb-6">
+                    <MagneticDock items={[
+                        { icon: <Instagram className="w-7 h-7" />, href: "https://www.instagram.com/samirdoes.ai/" },
+                        { icon: <Linkedin className="w-7 h-7" />, href: "https://www.linkedin.com/in/mohammed-samir-iba/" },
+                        { icon: <Mail className="w-7 h-7" />, href: "mailto:contact@samirdoesai.com" }
+                    ]} />
                 </div>
 
                 {/* Links */}
