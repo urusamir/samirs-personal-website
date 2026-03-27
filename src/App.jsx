@@ -5,6 +5,7 @@ import Protocol from './components/Protocol';
 import Footer from './components/Footer';
 import ToolSlider from './components/ToolSlider';
 import Pricing from './components/Pricing';
+import FAQ from './components/FAQ';
 import CalendarEmbed from './components/CalendarEmbed';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <ToolSlider />
       <Protocol />
       <Pricing />
+      <FAQ />
       <CalendarEmbed />
       <Footer />
     </div>
