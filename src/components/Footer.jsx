@@ -14,7 +14,7 @@ export default function Footer() {
                     </p>
 
                     <div className="mt-8 flex flex-col gap-3 items-center md:items-start w-full">
-                        <a href="https://tidycal.com/msamir5230/30-minute-meeting" target="_blank" rel="noreferrer" className="bg-accent hover:bg-accent/90 transition-colors text-white font-heading font-bold text-[15px] px-8 py-3 rounded-full w-fit max-w-xs shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+                        <a href="https://cal.com/samirdoesai/30min" target="_blank" rel="noreferrer" className="bg-accent hover:bg-accent/90 transition-colors text-white font-heading font-bold text-[15px] px-8 py-3 rounded-full w-fit max-w-xs shadow-[0_0_20px_rgba(37,99,235,0.3)]">
                             Book a free 1-2-1 call
                         </a>
                     </div>
@@ -25,7 +25,7 @@ export default function Footer() {
                         <h4 className="font-heading text-[15px] font-medium text-white mb-2 shadow-sm">Links</h4>
                         <a href="#top" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Home</a>
                         <a href="#protocol" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Our Process</a>
-                        <a href="https://tidycal.com/msamir5230/30-minute-meeting" target="_blank" rel="noreferrer" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Book a Call</a>
+                        <a href="https://cal.com/samirdoesai/30min" target="_blank" rel="noreferrer" className="font-heading text-sm text-white/60 hover:text-white transition-colors">Book a Call</a>
                     </div>
 
                     <div className="flex flex-col gap-4 mt-2">

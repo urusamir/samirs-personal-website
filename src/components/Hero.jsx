@@ -86,7 +86,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <a href="https://tidycal.com/msamir5230/30-minute-meeting" target="_blank" rel="noreferrer" className="hero-elem mt-8 magnetic-btn overflow-hidden relative group bg-white text-black px-12 py-5 text-base md:text-lg rounded-full font-heading font-bold shadow-[0_0_40px_rgba(37,99,235,0.4)] tracking-tight transition-transform flex items-center gap-3 w-fit mx-auto hover:bg-[#2563EB] hover:text-white hover:scale-[1.05]">
+                <a href="https://cal.com/samirdoesai/30min" target="_blank" rel="noreferrer" className="hero-elem mt-8 magnetic-btn overflow-hidden relative group bg-white text-black px-12 py-5 text-base md:text-lg rounded-full font-heading font-bold shadow-[0_0_40px_rgba(37,99,235,0.4)] tracking-tight transition-transform flex items-center gap-3 w-fit mx-auto hover:bg-[#2563EB] hover:text-white hover:scale-[1.05]">
                     <span className="relative z-10 flex items-center gap-2 transition-colors duration-300">
                         Book a free 1-2-1 call
                     </span>

@@ -5,6 +5,8 @@ import Protocol from './components/Protocol';
 import GetStarted from './components/GetStarted';
 import Footer from './components/Footer';
 import ToolSlider from './components/ToolSlider';
+import Pricing from './components/Pricing';
+import CalendarEmbed from './components/CalendarEmbed';
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <Hero />
       <ToolSlider />
       <Protocol />
+      <Pricing />
       <GetStarted />
+      <CalendarEmbed />
       <Footer />
     </div>
   );

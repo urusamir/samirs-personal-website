@@ -14,7 +14,7 @@ export default function Navbar() {
                     <a href="#scale" className="hover:text-accent transition-colors hover:-translate-y-[1px]">Contact</a>
                 </div>
                 <div className="flex items-center gap-4">
-                    <a href="https://tidycal.com/msamir5230/30-minute-meeting" target="_blank" rel="noreferrer" className="hidden md:flex magnetic-btn bg-accent text-white px-5 md:px-6 py-2 rounded-full font-heading font-bold text-xs md:text-sm tracking-tight transition-transform items-center justify-center shrink-0">
+                    <a href="https://cal.com/samirdoesai/30min" target="_blank" rel="noreferrer" className="hidden md:flex magnetic-btn bg-accent text-white px-5 md:px-6 py-2 rounded-full font-heading font-bold text-xs md:text-sm tracking-tight transition-transform items-center justify-center shrink-0">
                         <span className="relative z-10 hidden md:block">Book a free 1-2-1 call</span>
                     </a>
                     {/* Hamburger Button */}
@@ -33,7 +33,7 @@ export default function Navbar() {
             <div className={`md:hidden flex flex-col items-center gap-6 font-heading text-sm font-medium tracking-tight overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-64 mt-6 pb-4 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <a href="#protocol" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">Our Process</a>
                 <a href="#scale" onClick={() => setIsOpen(false)} className="hover:text-accent transition-colors">Contact</a>
-                <a href="https://tidycal.com/msamir5230/30-minute-meeting" target="_blank" rel="noreferrer" className="bg-accent text-white px-8 py-3 rounded-full font-heading font-bold text-sm tracking-tight w-full text-center mt-2" onClick={() => setIsOpen(false)}>
+                <a href="https://cal.com/samirdoesai/30min" target="_blank" rel="noreferrer" className="bg-accent text-white px-8 py-3 rounded-full font-heading font-bold text-sm tracking-tight w-full text-center mt-2" onClick={() => setIsOpen(false)}>
                     Book a free 1-2-1 call
                 </a>
             </div>
