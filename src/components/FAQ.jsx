@@ -4,7 +4,7 @@ import { ChevronDown, MessageCircleQuestion } from 'lucide-react';
 const faqData = [
   {
     question: "I know we need AI, but we are not sure where to start. What is the first step?",
-    answer: "I start with a deep-dive workflow audit. On a free discovery call, I look under the hood of your business to pinpoint exactly where manual tasks are bleeding time and money. From there, I'll map out a custom automation strategy that targets your highest-ROI opportunities first."
+    answer: "First step is to book my free discovery call where I'll audit your business workflows to pinpoint exactly where manual tasks are bleeding time and money. From there, I'll map out a custom automation strategy that targets your highest-ROI opportunities first."
   },
   {
     question: "How do we know if AI is a good fit for our business?",
