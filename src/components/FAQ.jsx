@@ -3,8 +3,8 @@ import { ChevronDown, MessageCircleQuestion } from 'lucide-react';
 
 const faqData = [
   {
-    question: "I'm not sure where to start. What do you recommend?",
-    answer: "I recommend starting with a discovery call where I can understand your business challenges and goals. This allows me to identify the most impactful opportunities for AI automation and provide tailored solutions for your specific challenges."
+    question: "I know I need AI, but I'm not sure where to start. What's the first step?",
+    answer: "I start with a deep-dive workflow audit. On a free discovery call, I look under the hood of your business to pinpoint exactly where manual tasks are bleeding time and money. From there, I'll map out a custom automation strategy that targets your highest-ROI opportunities first."
   },
   {
     question: "How do I know if AI is a good fit for my business?",
