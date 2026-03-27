@@ -19,7 +19,7 @@ export default function Pricing() {
                 <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 items-stretch overflow-x-auto md:overflow-visible snap-x snap-mandatory pt-6 pb-8 md:py-0 px-6 md:px-0 -mx-6 md:mx-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                     
                     {/* Hourly Plan */}
-                    <div className="flex flex-col p-8 rounded-3xl bg-[#09090B] border border-white/10 relative transition-transform hover:-translate-y-2 duration-300 snap-center shrink-0 w-[85vw] md:w-auto">
+                    <div className="flex flex-col p-8 rounded-3xl bg-[#09090B] border border-white/30 relative transition-transform hover:-translate-y-2 duration-300 snap-center shrink-0 w-[85vw] md:w-auto">
                         <div className="mb-8">
                             <h3 className="font-heading text-2xl font-semibold text-white mb-4">Hourly</h3>
                             <div className="flex items-baseline gap-2 mb-2">
@@ -86,7 +86,7 @@ export default function Pricing() {
                     </div>
 
                     {/* Custom Plan */}
-                    <div className="flex flex-col p-8 rounded-3xl bg-[#09090B] border border-white/10 relative transition-transform hover:-translate-y-2 duration-300 snap-center shrink-0 w-[85vw] md:w-auto">
+                    <div className="flex flex-col p-8 rounded-3xl bg-[#09090B] border border-white/30 relative transition-transform hover:-translate-y-2 duration-300 snap-center shrink-0 w-[85vw] md:w-auto">
                         <div className="mb-8">
                             <h3 className="font-heading text-2xl font-semibold text-white mb-4">Project-Based</h3>
                             <div className="flex items-baseline gap-2 mb-2">
