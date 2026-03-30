@@ -19,7 +19,7 @@ export default function Pricing() {
                 <div className="flex md:grid md:grid-cols-3 gap-6 lg:gap-5 xl:gap-8 items-stretch overflow-x-auto md:overflow-visible snap-x snap-mandatory pt-6 pb-8 md:py-0 px-6 md:px-0 -mx-6 md:mx-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                     
                     {/* Hourly Plan */}
-                    <div className="flex flex-col p-8 lg:p-6 xl:p-8 rounded-3xl bg-[#09090B] border border-white/30 relative transition-transform hover:-translate-y-2 lg:hover:-translate-y-1 duration-300 snap-center shrink-0 w-[85vw] md:w-auto">
+                    <div className="order-3 md:order-1 flex flex-col p-8 lg:p-6 xl:p-8 rounded-3xl bg-[#09090B] border border-white/30 relative transition-transform hover:-translate-y-2 lg:hover:-translate-y-1 duration-300 snap-center shrink-0 w-[85vw] md:w-auto">
                         <div className="mb-8 lg:mb-6 xl:mb-8">
                             <h3 className="font-heading text-2xl lg:text-xl xl:text-2xl font-semibold text-white mb-4 lg:mb-2 xl:mb-4">Pay as you go</h3>
                             <div className="flex items-baseline gap-2 mb-2">
@@ -43,7 +43,7 @@ export default function Pricing() {
                     </div>
 
                     {/* Monthly Retainer Plan (Highlighted) */}
-                    <div className="flex flex-col p-8 lg:p-6 xl:p-8 rounded-3xl bg-[#050B14] border border-[#2563EB]/50 shadow-[0_0_30px_rgba(37,99,235,0.15)] relative transition-transform hover:-translate-y-2 lg:hover:-translate-y-1 duration-300 transform md:-translate-y-4 lg:-translate-y-2 xl:-translate-y-4 snap-center shrink-0 w-[85vw] md:w-auto">
+                    <div className="order-1 md:order-2 flex flex-col p-8 lg:p-6 xl:p-8 rounded-3xl bg-[#050B14] border border-[#2563EB]/50 shadow-[0_0_30px_rgba(37,99,235,0.15)] relative transition-transform hover:-translate-y-2 lg:hover:-translate-y-1 duration-300 transform md:-translate-y-4 lg:-translate-y-2 xl:-translate-y-4 snap-center shrink-0 w-[85vw] md:w-auto">
                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#2563EB] text-white text-[10px] lg:text-[9px] xl:text-xs font-bold px-4 py-1.5 rounded-full tracking-wider uppercase font-heading">
                             Recommended
                         </div>
@@ -86,7 +86,7 @@ export default function Pricing() {
                     </div>
 
                     {/* Custom Plan */}
-                    <div className="flex flex-col p-8 lg:p-6 xl:p-8 rounded-3xl bg-[#09090B] border border-white/30 relative transition-transform hover:-translate-y-2 lg:hover:-translate-y-1 duration-300 snap-center shrink-0 w-[85vw] md:w-auto">
+                    <div className="order-2 md:order-3 flex flex-col p-8 lg:p-6 xl:p-8 rounded-3xl bg-[#09090B] border border-white/30 relative transition-transform hover:-translate-y-2 lg:hover:-translate-y-1 duration-300 snap-center shrink-0 w-[85vw] md:w-auto">
                         <div className="mb-8 lg:mb-6 xl:mb-8">
                             <h3 className="font-heading text-2xl lg:text-xl xl:text-2xl font-semibold text-white mb-4 lg:mb-2 xl:mb-4">Project-Based</h3>
                             <div className="flex items-baseline gap-2 mb-2">
